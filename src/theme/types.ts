@@ -11,6 +11,7 @@ export interface ThemeColors {
   border: string;
   white: string;
   screenBackground: string;
+  cardBackground: string;
 }
 
 export interface ThemeTypography {
@@ -46,6 +47,7 @@ export interface ThemeRadii {
   sm: number;
   button: number;
   pill: number;
+  card: number;
 }
 
 export interface ThemeAnimation {

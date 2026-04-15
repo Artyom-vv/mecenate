@@ -13,7 +13,8 @@ export const baseTheme: AppTheme = {
     surface: '#EFF2F7',
     border: '#E8ECEF',
     white: '#FFFFFF',
-    screenBackground: '#FFFFFF', // TODO: посмотреть позже в макете фигмы
+    screenBackground: '#F5F8FD',
+    cardBackground: '#FFFFFF',
   },
   typography: {
     fontFamily: 'Manrope',
@@ -46,6 +47,7 @@ export const baseTheme: AppTheme = {
     sm: 8,
     button: 14,
     pill: 9999,
+    card: 12,
   },
   animation: {
     duration: 200,
