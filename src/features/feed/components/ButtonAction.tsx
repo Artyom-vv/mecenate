@@ -36,14 +36,12 @@ export const ButtonAction: React.FC<ButtonActionProps> = ({
     ? theme.colors.likeOnText
     : theme.colors.textSecondary;
 
-  const handlePress = async () => {
+  const handlePress = () => {
     if (disabled) return;
 
     if (isLike) {
-      // лёгкий impact под клик по лайку
-      await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
     }
-
     onPress?.();
   };
 

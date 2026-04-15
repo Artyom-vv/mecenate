@@ -39,31 +39,34 @@ export const FeedScreen: React.FC = () => {
     refetch();
   };
 
-  const content = () => {
-    if (isLoading && posts.length === 0) {
-      return (
+  if (isLoading && posts.length === 0) {
+    return (
+      <SafeAreaView style={styles.screen} edges={['top']}>
         <View style={styles.centered}>
           <ActivityIndicator color={theme.colors.primary} />
         </View>
-      );
-    }
+      </SafeAreaView>
+    );
+  }
 
-    if (isError && posts.length === 0) {
-      return (
+  if (isError && posts.length === 0) {
+    return (
+      <SafeAreaView style={styles.screen} edges={['top']}>
         <Column gap={theme.spacing.xxl} style={styles.centered}>
           <Text style={styles.errorText}>Не удалось загрузить публикации</Text>
-
           <Button
-            style={{width: '100%'}}
+            style={{ width: '100%' }}
             title="Повторить"
             onPress={handleRetry}
             loading={isRefetching}
           />
         </Column>
-      );
-    }
+      </SafeAreaView>
+    );
+  }
 
-    return (
+  return (
+    <SafeAreaView style={styles.screen} edges={['top']}>
       <FlatList
         contentContainerStyle={styles.listContent}
         data={posts}
@@ -81,12 +84,6 @@ export const FeedScreen: React.FC = () => {
           ) : null
         }
       />
-    );
-  };
-
-  return (
-    <SafeAreaView style={styles.screen} edges={['top']}>
-      {content()}
     </SafeAreaView>
   );
 };
