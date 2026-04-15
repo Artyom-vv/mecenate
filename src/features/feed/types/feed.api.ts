@@ -1,10 +1,10 @@
-import { Post } from './feed.model';
-import { PaginatedResponse } from '../../../shared/types';
+import { Post } from '@features/feed/types/feed.model';
+import { PaginatedResponse } from '@shared/types';
 
 export interface GetFeedParams {
   cursor?: string;
   limit?: number;
-  tier?: 'free' | 'paid';
+  tier?: Post['tier'];
   simulate_error?: boolean;
 }
 

@@ -1,6 +1,4 @@
-import { Author } from '../../../shared/types';
-
-export type FeedFilter = 'all' | 'free' | 'paid';
+import { Author } from '@shared/types';
 
 export interface Post {
   id: string;
@@ -15,3 +13,5 @@ export interface Post {
   tier: 'free' | 'paid';
   createdAt: string;
 }
+
+export type FeedFilter = 'all' | Post['tier'];
