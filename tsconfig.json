@@ -7,7 +7,12 @@
       "@features/*":   ["./src/features/*"],
       "@stores/*":     ["./src/stores/*"],
       "@navigation/*": ["./src/navigation/*"],
-      "@theme/*":      ["./src/theme/*"]
+      "@theme":        ["./src/theme"],
+      "@theme/*":      ["./src/theme/*"],
+      "@icons":        ["./src/shared/icons"],
+      "@icons/*":      ["./src/shared/icons/*"],
+      "@assets":       ["./assets"],
+      "@assets/*":     ["./assets/*"]
     }
   }
 }

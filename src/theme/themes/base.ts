@@ -22,6 +22,7 @@ export const baseTheme: AppTheme = {
       xs: 13,
       sm: 14,
       md: 15,
+      xl: 18,
     },
     weights: {
       medium: '500',
@@ -46,8 +47,10 @@ export const baseTheme: AppTheme = {
   radii: {
     sm: 8,
     button: 14,
+    full: 9999,
     pill: 9999,
     card: 12,
+    skeleton: 22,
   },
   animation: {
     duration: 200,

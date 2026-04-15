@@ -20,6 +20,7 @@ export interface ThemeTypography {
     xs: number;
     sm: number;
     md: number;
+    xl: number;
   };
   weights: {
     medium: '500';
@@ -46,8 +47,10 @@ export interface ThemeSpacing {
 export interface ThemeRadii {
   sm: number;
   button: number;
+  full: number;
   pill: number;
   card: number;
+  skeleton: number;
 }
 
 export interface ThemeAnimation {
