@@ -1,2 +1,9 @@
 export { baseTheme } from './themes/base';
-export type { Theme } from './types';
+export type {
+  AppTheme,
+  ThemeColors,
+  ThemeTypography,
+  ThemeSpacing,
+  ThemeRadii,
+  ThemeAnimation,
+} from './types';
