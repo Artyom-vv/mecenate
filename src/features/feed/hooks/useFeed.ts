@@ -1,6 +1,6 @@
 import { useInfiniteQuery } from '@tanstack/react-query';
-import { feedStore } from '@features/feed/store/feedStore';
-import { getFeed } from '@features/feed/api/feed.api';
+import { feedStore } from '@features/feed/store';
+import { getFeed } from '@features/feed/api';
 import { GetFeedParams } from '@features/feed/types';
 
 export const useFeed = () => {

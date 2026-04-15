@@ -1,9 +1,9 @@
 import { View, Text, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { StackNavigationProp } from '@react-navigation/stack';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { FeedStackParamList } from '@navigation/stacks/FeedStack';
 
-type NavProp = StackNavigationProp<FeedStackParamList, 'Feed'>;
+type NavProp = NativeStackNavigationProp<FeedStackParamList, 'Feed'>;
 
 export const FeedScreen = () => {
   const navigation = useNavigation<NavProp>();
